@@ -18,11 +18,12 @@ public class ProductController {
     @ResponseBody
     public List<Product> getObjects (){
         // instancia o objeto
-        Departamento d1 = new Departamento(1L, "Tech");
-        Departamento d2 = new Departamento(2L, "Pet");
+        Departamento d1 = new Departamento(1L, "Funko Pop");
+        Departamento d2 = new Departamento(2L, "Mangás");
         // adiciona o id e o nome
-        Product p1 = new Product(1L,"Macbok Pro", 4000.0, d1);
-        Product p2 = new Product(2L,"Pethouse", 300.0, d2);
+        Product p1 = new Product(1L,"Pennywise", 129.71, d1);
+        Product p2 = new Product(2L,"Chainsaw Man vol1", 50.00, d2);
+        Product p3 = new Product(3L,"Chainsaw Man vol2", 50.00, d2);
 
         List<Product> list = Arrays.asList(p1,p2);
 
